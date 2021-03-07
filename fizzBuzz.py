@@ -8,6 +8,10 @@ def fizzBuzz():
         elif i % 3 != 0 and i % 5 == 0:
             output.append('Buzz')
             print('Buzz')
+
+        elif i % 3 == 0 and i % 5 == 0:
+            output.append('FizzBuzz')
+            print('FizzBuzz')
             
         else:
             output.append(i)
