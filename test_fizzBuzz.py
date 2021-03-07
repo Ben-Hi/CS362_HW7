@@ -22,5 +22,11 @@ class Test_FizzBuzz(unittest.TestCase):
             if i % 3 != 0 and i % 5 == 0:
                 self.assertEqual(output[i - 1], 'Buzz')
 
+    def test_print_fizzbuzz(self):
+        output = fizzBuzz.fizzBuzz()
+        for i in range(1, 101):
+            if i % 3 == 0 and i % 5 == 0:
+                self.assertEqual(output[i - 1], 'FizzBuzz')
+
 if __name__ == '__main__':
     unittest.main()
