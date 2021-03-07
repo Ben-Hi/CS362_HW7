@@ -11,3 +11,7 @@ def leapYear(year):
         else:
             print(year, ' is not a leap year')
             return str(year) + ' is not a leap year'
+
+    else:
+        print(year, ' is a leap year')
+        return str(year) + ' is a leap year'
